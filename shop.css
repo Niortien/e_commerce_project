@@ -14,6 +14,9 @@ body{
     padding: 20px 150px;
 
 }
+.menu{
+    display: none;
+}
 
 
 .bottom_box{
@@ -77,19 +80,18 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 10px ;
 
 }
 .texte_box{
     width: 50%;
     
-    padding: 25px;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 80%;
-    margin-right: 60px;
-    margin-top: 30px;
+    margin-top: 2rem;
+    
     
     
 
@@ -109,7 +111,9 @@ a{
     
     width: 100%;
     height: 80%;
+    position: relative;
 }
+
 .smalls_images{
     
     width: 100%;
@@ -133,11 +137,12 @@ a{
 }
 .price_reduction{
     display: flex;
-    justify-content: space-between;
-    width: 30%;
-    height: 10%;
+    width: 50%;
+       
     
-    align-items: center;
+    
+    
+
 }
 .price{
 width: 60%;
@@ -145,31 +150,35 @@ font-size: 20px;
 font-weight: bold;
 }
 .reduction{
-    width: 40%;
+    
     
     text-align: center;
     padding-top: 5px;
     color:  hsl(26, 100%, 55%);
-    border-radius: 2px;
+    border-radius: 5px;
     background-color:   hsl(25, 100%, 94%);
     font-size: 15px;
+    font-weight: bold;
 }
 .last_price{
-    margin-top: 5px;
+    
     color: hsl(219, 9%, 45%);
     font-size: 15px;
+    text-decoration: line-through;
 }
 .add_command{
     display: flex;
-    height: 20%;
+    
     
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    
 }
 .add{
-    width: 30%;
+    width: 40%;
     
-    height: 35px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
@@ -180,8 +189,8 @@ font-weight: bold;
 .command{
     width: 60%;
     display: flex;
-    
-    height: 40px;
+    margin-left: 15px;
+    padding: 10px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
@@ -193,6 +202,10 @@ font-weight: bold;
 }
 .command p{
     color: white;
+}
+.icon-nil{
+    font-weight: bold;
+
 }
 @media screen  and (max-width:512px) {
     .nav_links{
@@ -206,9 +219,87 @@ font-weight: bold;
     }
 
     .box{
-        padding: 1rem;
-    }
+        padding: 1rem 0rem;
     
+    }
+    .top_box{
+        
+        
+        display: flex;
+        justify-content: space-between;
+
+        padding: 10 30px;
+    }
+    .menu{
+        display: block;
+        padding: 15px;
+        
+    }
+    .smalls_images{
+        display: none;
+    }
+    .bottom_box{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .add_command{
+        flex-direction: column;
+        
+    }
+    .add{
+        width: 100%;
+    }
+    .command{
+        width: 100%;
+        margin-left: 0px;
+        padding: 15px;
+        margin-top: 5px;
+        
+    }
+   .price_reduction{
+    width: 40%;
+    margin-top: 20px;
+   }
+   .image_box{
+    padding: 0px;
+    width: 100%;
+    border: none;
+    
+    
+   }
+   .principal_image{
+    height: 90%;
+    border: none;
+    
+   }
+   .image{
+    border-radius: 0px;
+    width: 100%;
+   }
+   .texte_box{
+    padding: 5px 20px;
+    width: 100%;
+    
+   }
+   .texte_box h1{
+    width: 100%;
+   }
+   nav{
+    margin-right: 10px;
+   }
+   .prices{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+   }
+   .last_price{
+    margin-top: 20px;
+   }
+
+   
 
     
 }
