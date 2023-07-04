@@ -177,7 +177,7 @@ font-weight: bold;
 .command{
     width: 60%;
     display: flex;
-    border: 1px solid red;
+    
     height: 40px;
     align-items: center;
     justify-content: space-evenly;
