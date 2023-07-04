@@ -11,18 +11,10 @@ body{
 .box{
     
     height: 100vh;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px 150px;
+
 }
-.top_box{
-    border-bottom: 1px solid gray;
-    height: 10%;
-    width: 80%;
-    
-}
+
 
 .bottom_box{
     
@@ -37,6 +29,16 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    padding : 1rem 0px;
+   
+}
+
+
+.nav_left{
+    display: flex;
+    align-items: center;
 }
 ul{
     display: flex;
@@ -56,18 +58,19 @@ a{
 .avatar{
     width: 40px;
     height: 40px;
-    margin-right: 185px;
-    margin-left: 80px;
-    margin-bottom: 20px;
+    margin-left: 1rem;
+}
+
+.nav_right{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
 }
 .avatar img{
     width: 100%;
     height: 100%;
 }
-.icone{
-    margin-left: 320px;
-    margin-top: 5px;
-}
+
 .image_box{
     width: 40%;
     
@@ -192,57 +195,18 @@ font-weight: bold;
     color: white;
 }
 @media screen  and (max-width:512px) {
-    .box{
-    height: 300px;
-    width: 200px;
-    }
-    .smalls_images{
+    .nav_links{
         display: none;
     }
-    .principal_image{
-        width: 350px;
-        height: 300px;
-        margin-left: 90px;
-    }
-    .texte_box{
-        width: 300px;
-        padding: 0px;
-        height: 30%;
-        height: 50px;
-    }
-    .bottom_box{
-        flex-direction: column;
-        padding: 0px;
-    }
-    .add_command{
-        flex-direction: column;
 
+    nav{
+        border : none;
+        padding: 0;
+        width : 100%;
     }
-    .add{
-        width: 300px;
-        height: 90px;
-        
-    }
-    .command{
-        width: 300px;
-        height: 50px;
-        margin-top: 10px;
-    }
-    .price_reduction{
-        margin-top: 20px;
-        width: 150px;
-    }
-    .last_price{
-        display: flex;
-        justify-content: end;
-        text-align:start;
-        margin-bottom: 20px;
-    }
-    .top_box{
-        width: 300px;
-    }
-    .add_command{
-        height: 50%;
+
+    .box{
+        padding: 1rem;
     }
     
 
