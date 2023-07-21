@@ -58,6 +58,10 @@ a{
 
     color: hsl(219, 9%, 45%);
 }
+a:hover{
+    color:orange;
+}
+
 .avatar{
     width: 40px;
     height: 40px;
@@ -130,6 +134,7 @@ a{
 }
 .bordure{
     border-radius: 3px;
+    
 }
 .ombre{
     border: 2px solid hsl(26, 100%, 55%);
@@ -207,10 +212,25 @@ font-weight: bold;
     font-weight: bold;
 
 }
+.simple{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-1000);
+}
+.small_menu ul {
+    display: flex;
+    flex-direction: column;
+    flex: -1000px;
+    
+}
 @media screen  and (max-width:512px) {
-    .nav_links{
-        display: none;
+    .nav_links ul{
+       position: absolute;
+       left: -100%;
+       flex-direction: column;
+
     }
+    
 
     nav{
         border : none;
@@ -279,6 +299,7 @@ font-weight: bold;
     width: 100%;
    }
    .texte_box{
+    
     padding: 5px 20px;
     width: 100%;
     
@@ -290,6 +311,7 @@ font-weight: bold;
     margin-right: 10px;
    }
    .prices{
+   
     display: flex;
     justify-content: space-between;
     align-items:center;
