@@ -22,7 +22,7 @@ function increase(){
    let price=document.querySelector(".price")
    
 
-   price.innerHTML=parseInt=parseInt(price.innerHTML) *parseInt(qty.innerHTML);
+   price.innerHTML=parseInt(price.innerHTML) *parseInt(qty.innerHTML);
 }
 
 
