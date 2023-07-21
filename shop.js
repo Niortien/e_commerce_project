@@ -6,7 +6,7 @@ btnLess.addEventListener("click",decreaseQuantity)
 
 function increaseQuantity(){
    
-   qty.innerHTML=parseInt(qty.innerHTML)+1;
+   qty.innerText=parseInt(qty.innerText)+1;
    increase();
 }
 
@@ -19,10 +19,27 @@ function decreaseQuantity(){
 }
 
 function increase(){
-   let price=document.querySelector(".price")
+   let price=document.querySelector(".price");
+   let qty =  document.querySelector(".icon-nil");
    
 
-   price.innerHTML=parseInt=parseInt(price.innerHTML) *parseInt(qty.innerHTML);
+   price.innerText= parseInt(price.innerText) * parseInt(qty.innerText);
 }
 
 
+
+let iconMenu = document.querySelector('.menu');
+let iconClose = document.querySelector('.icon-close');
+
+iconMenu.addEventListener('click', showMenu);
+iconClose.addEventListener('click', closeMenu);
+
+function showMenu() {
+   let small_menu = document.querySelector('.small_menu');
+   small_menu.classList.add('show-small-menu');
+}
+
+function closeMenu() {
+   let small_menu = document.querySelector('.small_menu');
+   small_menu.classList.remove('show-small-menu');
+}

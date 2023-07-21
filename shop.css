@@ -217,11 +217,28 @@ font-weight: bold;
     flex-direction: column;
     transform: translateX(-1000);
 }
-.small_menu ul {
-    display: flex;
-    flex-direction: column;
-    flex: -1000px;
-    
+.small_menu  {
+    border : 1px solid red;
+    padding: 1rem;
+    position: absolute;
+    height: 100vh;
+    width: 220px;
+    z-index: 1000;
+    background-color: white;
+    left: -500px;
+    transition: ease-in-out 0.3s;
+    box-shadow: 8rem 0px 0.8rem rgba(0,0,0,0.3);
+}
+
+.show-small-menu{
+    left: 0px;
+}
+.icon-close{
+    margin-bottom: 2rem;
+}
+
+.nav-link{
+    margin-bottom: 1rem;
 }
 @media screen  and (max-width:512px) {
     .nav_links ul{
