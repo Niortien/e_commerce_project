@@ -46,12 +46,14 @@ function closeMenu() {
    small_menu.classList.remove('show-small-menu');
 }
 
-let image=document.querySelectorAll(".bordure")
+let image=document.querySelectorAll(".image")
 image.forEach((buttn)=>{buttn.addEventListener("click",change)})
+
 function change(){
-   let image=document.querySelectorAll(".bordure")
-image.forEach((buttn)=>{buttn.addEventListener("click",change)})
-   
-let elem=this.parentElement.parentElement.previousElementSibling
+
+   let currentScr = this.children[0].src;
+   let newScr = currentScr.substr(22, 22) + '.jpg';
+   let mainImg = document.querySelector('.img-main');
+   mainImg.setAttribute('src', newScr);
 
 }
